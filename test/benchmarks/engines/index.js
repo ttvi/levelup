@@ -1,13 +1,3 @@
-/* Copyright (c) 2012-2018 LevelUP contributors
- * See list at <https://github.com/level/levelup#contributing>
- * MIT License <https://github.com/level/levelup/blob/master/LICENSE.md>
- */
-
-module.exports.LevelUP = require('./levelup')
-module.exports.LevelUP.color = 'green'
-
-module.exports['LevelUP (release)'] = require('./levelup-release')
-module.exports['LevelUP (release)'].color = 'yellow'
-
-module.exports.SQLite3 = require('./sqlite3')
-module.exports.SQLite3.color = 'blue'
+version https://git-lfs.github.com/spec/v1
+oid sha256:98843b11fd000c2645fd87e7a0df6f3dbd191d4f9e3a65402bce7229373b6b53
+size 480

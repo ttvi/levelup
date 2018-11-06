@@ -1,26 +1,3 @@
-/* Copyright (c) 2012-2018 LevelUP contributors
- * See list at <https://github.com/level/levelup#contributing>
- * MIT License <https://github.com/level/levelup/blob/master/LICENSE.md>
- */
-
-var sqlite3 = require('sqlite3')
-
-var createDb = function (location, callback) {
-  var db = new sqlite3.Database(location, function (err) {
-    if (err) return callback(err)
-    db.run('CREATE TABLE bench (key VARCHAR(32), value TEXT)', function (err) {
-      if (err) return callback(err)
-      setTimeout(callback.bind(null, null, db), 50)
-    })
-  })
-}
-
-var closeDb = function (db, callback) {
-  db.close() // does it have a callback?
-  setTimeout(callback, 50)
-}
-
-module.exports = {
-  createDb: createDb,
-  closeDb: closeDb
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6aa52bcea13acaeb4f18695fa7289f882ffa37ef7ed2089f7f666d91306fb67c
+size 719

@@ -1,22 +1,3 @@
-/* Copyright (c) 2012-2018 LevelUP contributors
- * See list at <https://github.com/level/levelup#contributing>
- * MIT License <https://github.com/level/levelup/blob/master/LICENSE.md>
- */
-
-var levelup = require('levelup')
-var leveldown = require('leveldown')
-
-var createDb = function (location, callback) {
-  levelup(leveldown(location), function (err, db) {
-    setTimeout(callback.bind(null, err, db), 50)
-  })
-}
-
-var closeDb = function (db, callback) {
-  db.close(callback)
-}
-
-module.exports = {
-  createDb: createDb,
-  closeDb: closeDb
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae671b83c6ea5eb8727eab2ee72067c65ccbcf29813dfc75055294f1a43b5f20
+size 542
